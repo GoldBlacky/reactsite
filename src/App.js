@@ -1,7 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import React, { useState } from "react";
+
+const user = {
+  name: "Hedy Lamarr",
+  imageUrl: "https://i.imgur.com/yXOvdOSs.jpg",
+  imageSize: 90,
+};
 
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
+
+  const handleLogout = () => {
+    setIsLoggedIn(!isLoggedIn);
+  };
+
   return (
     <div className="App">
       <header className="App-header">
@@ -17,9 +30,41 @@ function App() {
         >
           Learn React
         </a>
+        {isLoggedIn ? (
+          <>
+            <Profile user={user} />
+            <button onClick={handleLogout}>Logout</button>
+          </>
+        ) : (
+          <>
+            <LoginForm />
+            <button onClick={handleLogout}>Login</button>
+          </>
+        )}
       </header>
     </div>
   );
+}
+
+function Profile({ user }) {
+  return (
+    <div>
+      <h1>{user.name}</h1>
+      <img
+        className="avatar"
+        src={user.imageUrl}
+        alt={"Photo of " + user.name}
+        style={{
+          width: user.imageSize,
+          height: user.imageSize,
+        }}
+      />
+    </div>
+  );
+}
+
+function LoginForm() {
+  return <></>;
 }
 
 export default App;
