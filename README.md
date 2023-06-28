@@ -2,6 +2,7 @@
 
 erik was here
 whodiswhat was here
+hello mate
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
