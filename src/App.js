@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 class User {
     constructor(name, imageUrl, imageSize) {
@@ -8,12 +8,43 @@ class User {
         this.imageUrl = imageUrl;
         this.imageSize = imageSize;
     }
+
+    profile() {
+        return (
+            <div>
+                <h1>{this.name}</h1>
+                <img
+                    className="avatar"
+                    src={this.imageUrl}
+                    alt={"Photo of " + this.name}
+                    style={{
+                        width: this.imageSize,
+                        height: this.imageSize,
+                    }}
+                />
+            </div>
+        );
+    }
 }
 
-const user = new User("Hedy Lamarr", "https://i.imgur.com/yXOvdOSs.jpg", 90);
+class Admin extends User {
+    constructor(name, imageUrl, imageSize, adminlevel) {
+        super(name, imageUrl, imageSize);
+        this.adminlevel = adminlevel;
+    }
+    admprofile() {
+        return [this.profile(), <p>Adm Level: {this.adminlevel}</p>];
+    }
+}
 
+const user1 = new User("Hedy Lamarr", "https://i.imgur.com/yXOvdOSs.jpg", 90);
+const user2 = new Admin("Ich", "https://i.imgur.com/yXOvdOSs.jpg", 100, 1);
 function App() {
     const [isLoggedIn, setIsLoggedIn] = useState(true);
+
+    useEffect(() => {
+        window.scrollTo(0, document.body.scrollHeight);
+    }, [isLoggedIn]);
 
     const handleLogout = () => {
         setIsLoggedIn(!isLoggedIn);
@@ -34,9 +65,12 @@ function App() {
                 >
                     Learn React
                 </a>
+            </header>
+            <main>
+                <AdmProfile user={user2} />
                 {isLoggedIn ? (
                     <>
-                        <Profile user={user} />
+                        <Profile user={user1} />
                         <button onClick={handleLogout}>Logout</button>
                     </>
                 ) : (
@@ -45,24 +79,7 @@ function App() {
                         <button onClick={handleLogout}>Login</button>
                     </>
                 )}
-            </header>
-        </div>
-    );
-}
-
-function Profile({ user }) {
-    return (
-        <div>
-            <h1>{user.name}</h1>
-            <img
-                className="avatar"
-                src={user.imageUrl}
-                alt={"Photo of " + user.name}
-                style={{
-                    width: user.imageSize,
-                    height: user.imageSize,
-                }}
-            />
+            </main>
         </div>
     );
 }
@@ -71,4 +88,12 @@ function LoginForm() {
     return <></>;
 }
 
-export default App;
+function Profile({ user }) {
+    return user.profile();
+}
+
+function AdmProfile({ user }) {
+    return user.admprofile();
+}
+
+export { App };
