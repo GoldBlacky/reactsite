@@ -2,11 +2,15 @@ import logo from "./logo.svg";
 import "./App.css";
 import React, { useState } from "react";
 
-const user = {
-  name: "Hedy Lamarr",
-  imageUrl: "https://i.imgur.com/yXOvdOSs.jpg",
-  imageSize: 90,
-};
+class User {
+  constructor(name, imageUrl, imageSize) {
+    this.name = name;
+    this.imageUrl = imageUrl;
+    this.imageSize = imageSize;
+  }
+}
+
+const user = new User("Hedy Lamarr","https://i.imgur.com/yXOvdOSs.jpg",90);
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(true);
