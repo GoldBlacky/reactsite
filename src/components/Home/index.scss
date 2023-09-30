@@ -1,4 +1,6 @@
 .home-page {
+  height: 100%;
+
   .text-zone {
     position: absolute;
     left: 10%;
@@ -65,5 +67,11 @@
     letter-spacing: .4rem;
     font-family: sans-serif;
     text-decoration: none;
+    padding: 1rem 1.8rem;
+    border:  .1rem solid #ffd700;
+    margin-top: 2.5rem;
+    float:left;
+    animation: fadeIn 1s 1.8s backwards;
+    white-space: nowrap;
   }
 }

@@ -1,0 +1,25 @@
+.logo-container {
+    z-index: 0;
+    width: 400px;
+    height: 100%;
+    opacity: 1;
+    position: absolute;
+    top: auto;
+    right: 15%;
+    bottom: auto;
+    left: auto;
+    margin: auto;
+  
+    svg {
+      width: 100%;
+      height: 90%;
+      position: absolute;
+      top: 5%;
+    }
+
+  }
+  
+  .svg-container {
+    stroke: #ffffff;
+    stroke-width: 1;
+  }
