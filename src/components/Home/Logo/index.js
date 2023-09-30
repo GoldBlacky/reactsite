@@ -4,386 +4,186 @@ import DrawSVGPlugin from 'gsap-trial/DrawSVGPlugin' // Import DrawSVGPlugin fro
 
 import LogoS from '../../../assets/images/logo-s.png'
 import './index.scss'
-
+import { motion } from 'framer-motion'
 
 // Register the DrawSVGPlugin
 gsap.registerPlugin(DrawSVGPlugin)
 
 const Logo = () => {
-  const path1 = useRef(null)
-  const path2 = useRef(null)
-  const path3 = useRef(null)
-  const path4 = useRef(null)
-  const path5 = useRef(null)
-  const path6 = useRef(null)
-  const path7 = useRef(null)
-  const path8 = useRef(null)
-  const path9 = useRef(null)
-  const path10 = useRef(null)
-  const path11 = useRef(null)
-  const path12 = useRef(null)
-  const path13 = useRef(null)
-  const path14 = useRef(null)
-  const path15 = useRef(null)
-  const path16 = useRef(null)
-  const path17 = useRef(null)
-  const path18 = useRef(null)
-  const path19 = useRef(null)
-  const path20 = useRef(null)
-  const path21 = useRef(null)
-  const path22 = useRef(null)
-  const path23 = useRef(null)
-  const path24 = useRef(null)
-  const path25 = useRef(null)
-  const path26 = useRef(null)
-  const path27 = useRef(null)
-  const path28 = useRef(null)
-  const path29 = useRef(null)
-  const path30 = useRef(null)
-  const path31 = useRef(null)
-  const path32 = useRef(null)
-  const path33 = useRef(null)
-  const path34 = useRef(null)
-  const path35 = useRef(null)
-  const path36 = useRef(null)
-  const path37 = useRef(null)
-  const path38 = useRef(null)
-  const path39 = useRef(null)
-  const path40 = useRef(null)
-  const path41 = useRef(null)
-  const path42 = useRef(null)
-  const path43 = useRef(null)
-  const path44 = useRef(null)
-  const path45 = useRef(null)
-  const path46 = useRef(null)
-  const path47 = useRef(null)
-  const path48 = useRef(null)
-  const path49 = useRef(null)
-  const path50 = useRef(null)
-  const path51 = useRef(null)
-  const path52 = useRef(null)
-  const path53 = useRef(null)
+    const path1 = useRef(null)
+    const path2 = useRef(null)
+    const path3 = useRef(null)
+    const path4 = useRef(null)
+    const path5 = useRef(null)
+    const path6 = useRef(null)
+    const path7 = useRef(null)
+    const path8 = useRef(null)
+    const path9 = useRef(null)
+    const path10 = useRef(null)
+    const path11 = useRef(null)
+    const path12 = useRef(null)
+    const path13 = useRef(null)
+    const path14 = useRef(null)
+    const path15 = useRef(null)
+    const path16 = useRef(null)
+    const path17 = useRef(null)
+    const path18 = useRef(null)
+    const path19 = useRef(null)
+    const path20 = useRef(null)
+    const path21 = useRef(null)
+    const path22 = useRef(null)
+    const path23 = useRef(null)
+    const path24 = useRef(null)
+    const path25 = useRef(null)
+    const path26 = useRef(null)
+    const path27 = useRef(null)
+    const path28 = useRef(null)
+    const path29 = useRef(null)
+    const path30 = useRef(null)
+    const path31 = useRef(null)
+    const path32 = useRef(null)
+    const path33 = useRef(null)
+    const path34 = useRef(null)
+    const path35 = useRef(null)
+    const path36 = useRef(null)
+    const path37 = useRef(null)
+    const path38 = useRef(null)
+    const path39 = useRef(null)
+    const path40 = useRef(null)
+    const path41 = useRef(null)
+    const path42 = useRef(null)
+    const path43 = useRef(null)
+    const path44 = useRef(null)
+    const path45 = useRef(null)
+    const path46 = useRef(null)
+    const path47 = useRef(null)
+    const path48 = useRef(null)
+    const path49 = useRef(null)
+    const path50 = useRef(null)
+    const path51 = useRef(null)
+    const path52 = useRef(null)
+    const path53 = useRef(null)
 
   useEffect(() => {
     const tl = gsap.timeline({
       defaults: { duration: 2, ease: 'power2.inOut' },
     })
 
-    tl.set(path1.current, { drawSVG: '100% 100%' })
-    tl.to(path1.current, { drawSVG: '0% 100%' })
-
-    const tlPath2 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath2.set(path2.current, { drawSVG: '100% 100%' })
-    tlPath2.to(path2.current, { drawSVG: '0% 100%' })
-
-    const tlPath3 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath3.set(path3.current, { drawSVG: '100% 100%' })
-    tlPath3.to(path3.current, { drawSVG: '0% 100%' })
-
-    const tlPath4 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath4.set(path4.current, { drawSVG: '100% 100%' })
-    tlPath4.to(path4.current, { drawSVG: '0% 100%' })
-
-    const tlPath5 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath5.set(path5.current, { drawSVG: '100% 100%' })
-    tlPath5.to(path5.current, { drawSVG: '0% 100%' })
-
-    const tlPath6 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath6.set(path6.current, { drawSVG: '100% 100%' })
-    tlPath6.to(path6.current, { drawSVG: '0% 100%' })
-
-    const tlPath7 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath7.set(path7.current, { drawSVG: '100% 100%' })
-    tlPath7.to(path7.current, { drawSVG: '0% 100%' })
-
-    const tlPath8 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath8.set(path8.current, { drawSVG: '100% 100%' })
-    tlPath8.to(path8.current, { drawSVG: '0% 100%' })
-
-    const tlPath9 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath9.set(path9.current, { drawSVG: '100% 100%' })
-    tlPath9.to(path9.current, { drawSVG: '0% 100%' })
-
-    const tlPath10 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath10.set(path10.current, { drawSVG: '100% 100%' })
-    tlPath10.to(path10.current, { drawSVG: '0% 100%' })
-
-    const tlPath11 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath11.set(path11.current, { drawSVG: '100% 100%' })
-    tlPath11.to(path11.current, { drawSVG: '0% 100%' })
-
-    const tlPath12 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath12.set(path12.current, { drawSVG: '100% 100%' })
-    tlPath12.to(path12.current, { drawSVG: '0% 100%' })
-
-    const tlPath13 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath13.set(path13.current, { drawSVG: '100% 100%' })
-    tlPath13.to(path13.current, { drawSVG: '0% 100%' })
-
-    const tlPath14 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath14.set(path14.current, { drawSVG: '100% 100%' })
-    tlPath14.to(path14.current, { drawSVG: '0% 100%' })
-
-    const tlPath15 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath15.set(path15.current, { drawSVG: '100% 100%' })
-    tlPath15.to(path15.current, { drawSVG: '0% 100%' })
-
-    const tlPath16 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath16.set(path16.current, { drawSVG: '100% 100%' })
-    tlPath16.to(path16.current, { drawSVG: '0% 100%' })
-
-    const tlPath17 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath17.set(path17.current, { drawSVG: '100% 100%' })
-    tlPath17.to(path17.current, { drawSVG: '0% 100%' })
-
-    const tlPath18 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath18.set(path18.current, { drawSVG: '100% 100%' })
-    tlPath18.to(path18.current, { drawSVG: '0% 100%' })
-
-    const tlPath19 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath19.set(path19.current, { drawSVG: '100% 100%' })
-    tlPath19.to(path19.current, { drawSVG: '0% 100%' })
-
-    const tlPath20 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath20.set(path20.current, { drawSVG: '100% 100%' })
-    tlPath20.to(path20.current, { drawSVG: '0% 100%' })
-
-    const tlPath21 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath21.set(path21.current, { drawSVG: '100% 100%' })
-    tlPath21.to(path21.current, { drawSVG: '0% 100%' })
-
-    const tlPath22 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath22.set(path22.current, { drawSVG: '100% 100%' })
-    tlPath22.to(path22.current, { drawSVG: '0% 100%' })
-
-    const tlPath23 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath23.set(path23.current, { drawSVG: '100% 100%' })
-    tlPath23.to(path23.current, { drawSVG: '0% 100%' })
-
-    const tlPath24 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath24.set(path24.current, { drawSVG: '100% 100%' })
-    tlPath24.to(path24.current, { drawSVG: '0% 100%' })
-
-    const tlPath25 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath25.set(path25.current, { drawSVG: '100% 100%' })
-    tlPath25.to(path25.current, { drawSVG: '0% 100%' })
-
-    const tlPath26 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath26.set(path26.current, { drawSVG: '100% 100%' })
-    tlPath26.to(path26.current, { drawSVG: '0% 100%' })
-
-    const tlPath27 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath27.set(path27.current, { drawSVG: '100% 100%' })
-    tlPath27.to(path27.current, { drawSVG: '0% 100%' })
-
-    const tlPath28 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath28.set(path28.current, { drawSVG: '100% 100%' })
-    tlPath28.to(path28.current, { drawSVG: '0% 100%' })
-
-    const tlPath29 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath29.set(path29.current, { drawSVG: '100% 100%' })
-    tlPath29.to(path29.current, { drawSVG: '0% 100%' })
-
-    const tlPath30 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath30.set(path30.current, { drawSVG: '100% 100%' })
-    tlPath30.to(path30.current, { drawSVG: '0% 100%' })
-
-    const tlPath31 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath31.set(path31.current, { drawSVG: '100% 100%' })
-    tlPath31.to(path31.current, { drawSVG: '0% 100%' })
-
-    const tlPath32 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath32.set(path32.current, { drawSVG: '100% 100%' })
-    tlPath32.to(path32.current, { drawSVG: '0% 100%' })
-
-    const tlPath33 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath33.set(path33.current, { drawSVG: '100% 100%' })
-    tlPath33.to(path33.current, { drawSVG: '0% 100%' })
-
-    const tlPath34 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath34.set(path34.current, { drawSVG: '100% 100%' })
-    tlPath34.to(path34.current, { drawSVG: '0% 100%' })
-
-    const tlPath35 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath35.set(path35.current, { drawSVG: '100% 100%' })
-    tlPath35.to(path35.current, { drawSVG: '0% 100%' })
-
-    const tlPath36 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath36.set(path36.current, { drawSVG: '100% 100%' })
-    tlPath36.to(path36.current, { drawSVG: '0% 100%' })
-
-    const tlPath37 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath37.set(path37.current, { drawSVG: '100% 100%' })
-    tlPath37.to(path37.current, { drawSVG: '0% 100%' })
-
-    const tlPath38 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath38.set(path38.current, { drawSVG: '100% 100%' })
-    tlPath38.to(path38.current, { drawSVG: '0% 100%' })
-
-    const tlPath39 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath39.set(path39.current, { drawSVG: '100% 100%' })
-    tlPath39.to(path39.current, { drawSVG: '0% 100%' })
-
-    const tlPath40 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath40.set(path40.current, { drawSVG: '100% 100%' })
-    tlPath40.to(path40.current, { drawSVG: '0% 100%' })
-
-    const tlPath41 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath41.set(path41.current, { drawSVG: '100% 100%' })
-    tlPath41.to(path41.current, { drawSVG: '0% 100%' })
-
-    const tlPath42 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath42.set(path42.current, { drawSVG: '100% 100%' })
-    tlPath42.to(path42.current, { drawSVG: '0% 100%' })
-
-    const tlPath43 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath43.set(path43.current, { drawSVG: '100% 100%' })
-    tlPath43.to(path43.current, { drawSVG: '0% 100%' })
-
-    const tlPath44 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath44.set(path44.current, { drawSVG: '100% 100%' })
-    tlPath44.to(path44.current, { drawSVG: '0% 100%' })
-
-    const tlPath45 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath45.set(path45.current, { drawSVG: '100% 100%' })
-    tlPath45.to(path45.current, { drawSVG: '0% 100%' })
-
-    const tlPath46 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath46.set(path46.current, { drawSVG: '100% 100%' })
-    tlPath46.to(path46.current, { drawSVG: '0% 100%' })
-
-    const tlPath47 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath47.set(path47.current, { drawSVG: '100% 100%' })
-    tlPath47.to(path47.current, { drawSVG: '0% 100%' })
-
-    const tlPath48 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath48.set(path48.current, { drawSVG: '100% 100%' })
-    tlPath48.to(path48.current, { drawSVG: '0% 100%' })
-
-    const tlPath49 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath49.set(path49.current, { drawSVG: '100% 100%' })
-    tlPath49.to(path49.current, { drawSVG: '0% 100%' })
-
-    const tlPath50 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath50.set(path50.current, { drawSVG: '100% 100%' })
-    tlPath50.to(path50.current, { drawSVG: '0% 100%' })
-
-    const tlPath51 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath51.set(path51.current, { drawSVG: '100% 100%' })
-    tlPath51.to(path51.current, { drawSVG: '0% 100%' })
-
-    const tlPath52 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath52.set(path52.current, { drawSVG: '100% 100%' })
-    tlPath52.to(path52.current, { drawSVG: '0% 100%' })
-
-    const tlPath53 = gsap.timeline({
-      defaults: { duration: 2, ease: 'power2.inOut' },
-    })
-    tlPath53.set(path53.current, { drawSVG: '100% 100%' })
-    tlPath53.to(path53.current, { 
-        drawSVG: '0% 100%',
+    tl.set(
+      [
+        path1.current,
+        path2.current,
+        path3.current,
+        path4.current,
+        path5.current,
+        path6.current,
+        path7.current,
+        path8.current,
+        path9.current,
+        path10.current,
+        path11.current,
+        path12.current,
+        path13.current,
+        path14.current,
+        path15.current,
+        path16.current,
+        path17.current,
+        path18.current,
+        path19.current,
+        path20.current,
+        path21.current,
+        path22.current,
+        path23.current,
+        path24.current,
+        path25.current,
+        path26.current,
+        path27.current,
+        path28.current,
+        path29.current,
+        path30.current,
+        path31.current,
+        path32.current,
+        path33.current,
+        path34.current,
+        path35.current,
+        path36.current,
+        path37.current,
+        path38.current,
+        path39.current,
+        path40.current,
+        path41.current,
+        path42.current,
+        path43.current,
+        path44.current,
+        path45.current,
+        path46.current,
+        path47.current,
+        path48.current,
+        path49.current,
+        path50.current,
+        path51.current,
+        path52.current,
+        path53.current,
+      ],
+      { drawSVG: '100% 100%' }
+    ).to(
+      [
+        path1.current,
+        path2.current,
+        path3.current,
+        path4.current,
+        path5.current,
+        path6.current,
+        path7.current,
+        path8.current,
+        path9.current,
+        path10.current,
+        path11.current,
+        path12.current,
+        path13.current,
+        path14.current,
+        path15.current,
+        path16.current,
+        path17.current,
+        path18.current,
+        path19.current,
+        path20.current,
+        path21.current,
+        path22.current,
+        path23.current,
+        path24.current,
+        path25.current,
+        path26.current,
+        path27.current,
+        path28.current,
+        path29.current,
+        path30.current,
+        path31.current,
+        path32.current,
+        path33.current,
+        path34.current,
+        path35.current,
+        path36.current,
+        path37.current,
+        path38.current,
+        path39.current,
+        path40.current,
+        path41.current,
+        path42.current,
+        path43.current,
+        path44.current,
+        path45.current,
+        path46.current,
+        path47.current,
+        path48.current,
+        path49.current,
+        path50.current,
+        path51.current,
+        path52.current,
+        path53.current,
+      ],
+      {
+        drawSVG: '0% 100%', 
         onComplete: () => {
             const svgContainer = document.querySelector('.svg-container');
             gsap.to(svgContainer, {
@@ -393,12 +193,10 @@ const Logo = () => {
                 ease: 'power2.inOut',
               });
         }
+    }
+    )
 
-})
-
-    //Use tl.play() to start the animation
     tl.play()
-
   }, [])
 
   return (
