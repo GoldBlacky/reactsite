@@ -17,36 +17,13 @@
     font-family: 'Coolvetica';
     font-weight: 400;
 
-    &::before {
-      content: '<h1>';
-      font-family: 'La Belle Aurore';
-      color: #ffd700;
-      font-size: 1.8rem;
-      position: absolute;
-      margin-top: -4rem;
-      left: 1.5rem;
-      opacity: 0.6;
-    }
-
-    &::after {
-      content: '<h1/>';
-      font-family: 'La Belle Aurore';
-      color: #ffd700;
-      font-size: 1.8rem;
-      margin-top: 1.8rem;
-      margin-left: 2rem;
-      animation: fadeIn 1s 1.7s backwards;
-      opacity: 0.6;
-
-    }
-
     img {
       width: 3.2rem;
       margin-left: 2rem;
       opacity: 0;
       height: auto;
       animation: rotateIn 1s linear both;
-      animation-delay: 1.4s;
+      animation-delay: 0s;
     }
   }
 

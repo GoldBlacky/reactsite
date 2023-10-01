@@ -7,64 +7,38 @@ import AnimatedLetters from '../AnimatedLetters'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-  const nameArray = ['l', 'o', 'b', 'o', 'd', 'a', 'n']
-  const jobArray = [
-    'w',
-    'e',
-    'b',
-    ' ',
-    'd',
-    'e',
-    'v',
-    'e',
-    'l',
-    'o',
-    'p',
-    'e',
-    'r',
-    '.',
-  ]
+  const brothersArray = ['B', 'R', 'O', 'T', 'H', 'E', 'R', 'S', '.']
 
   useEffect(() => {
     let timeoutId = setTimeout(() => {
-      setLetterClass('text-animate-hover');
-    }, 4000);
+      setLetterClass('text-animate-hover')
+    }, 3000)
 
     // Cleanup function
     return () => {
-      clearTimeout(timeoutId);
-    };
-  }, []);
+      clearTimeout(timeoutId)
+    }
+  }, [])
 
   return (
     <div className="container home-page">
       <div className="text-zone">
         <h1>
-          <span className={letterClass}>H</span>
-          <span className={`${letterClass} _12`}>i</span>
-          <span className={`${letterClass} _13`}>,</span>
-          <br />
           <AnimatedLetters
             letterClass={letterClass}
-            strArray={['I', "'", 'm']}
-            idx={14}
-          />
-          <img src={LogoTitle} alt="developer" />
-          <AnimatedLetters
-            letterClass={letterClass}
-            strArray={nameArray}
-            idx={17}
+            strArray={['B', 'E', 'A', 'R', 'D']}
+            idx={10}
           />
           <br />
           <AnimatedLetters
             letterClass={letterClass}
-            strArray={jobArray}
-            idx={24}
+            strArray={brothersArray}
+            idx={15}
           />
         </h1>
-        <h2>Frontend Developer / JavaScript Expert / Youtuber</h2>
+        <h2>Irgend ein Untertitel oderso</h2>
         <Link to="/contact" className="flat-button">
-          Contact Me
+          Button
         </Link>
       </div>
       <Logo />
