@@ -4,29 +4,6 @@
   position: absolute;
 }
 
-.top-tags {
-  bottom: auto;
-  top: 3.5rem;
-}
-
-.bottom-tags {
-  bottom: 3.5rem;
-  top: auto;
-}
-
-.tags {
-  color: #ffd700;
-  opacity: 0.6;
-  position: absolute;
-  left: 12rem;
-  font-size: 1.8rem;
-  font-family: 'La Belle Aurore';
-}
-
-.bottom-tag-html {
-  margin-left: -2rem;
-}
-
 .container {
   width: 100%;
   will-change: contents;
@@ -38,6 +15,65 @@
   margin: 0 auto;
   z-index: 1;
   transform-style: preserve-3d;
-  animation: fadeIn .5s forwards;
-  animation-delay: .5s;
+  animation: fadeIn 0.5s forwards;
+  animation-delay: 0.5s;
+}
+
+.home-page{
+  .text-zone{
+    .text-animate-hover {
+      &:hover {
+        animation: rubberBand 1s;
+        color: #ffd700;
+      }
+    }
+  }
+}
+
+.about-page {
+  .text-zone {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35%;
+    vertical-align: middle;
+    display: table;
+    max-height: 90%;
+
+    h1 {
+      font-size: 5.3rem;
+      font-family: 'Coolvetica';
+      color: #f4f4f4;
+      font-weight: 400;
+      margin-top: 0;
+      position: relative;
+      margin-bottom: 4rem;
+      left: 1rem;
+    }
+    p {
+      font-size: 2rem;
+      color: #f4f4f4;
+      font-family: sans-serif;
+      font-weight: 300;
+      min-width: fit-content;
+      animation: pulse 1s;
+
+      &:nth-of-type(1) {
+        animation-delay: .6s;
+      }
+      &:nth-of-type(2) {
+        animation-delay: .7s;
+      }
+      &:nth-of-type(3) {
+        animation-delay: .8s;
+      }
+    }
+  }
+
+  .text-animate-hover {
+    &:hover{
+      transform: (scale(1.2));
+    }
+  }
 }
