@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/reactsite/static/css/main.89ca244e.css",
+    "main.js": "/reactsite/static/js/main.06456ca5.js",
+    "static/js/787.261e848f.chunk.js": "/reactsite/static/js/787.261e848f.chunk.js",
+    "static/media/helvetica-neu.ttf": "/reactsite/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
+    "static/media/BB_Logo_W.svg": "/reactsite/static/media/BB_Logo_W.dc29af5bb2a100a0b31e93ec51de5e05.svg",
+    "static/media/LaBelleAurore.woff2": "/reactsite/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
+    "static/media/logo-s.png": "/reactsite/static/media/logo-s.bfc9f81846bda5218dab.png",
+    "static/media/CoolveticaRg-Regular.woff2": "/reactsite/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
+    "index.html": "/reactsite/index.html",
+    "main.89ca244e.css.map": "/reactsite/static/css/main.89ca244e.css.map",
+    "main.06456ca5.js.map": "/reactsite/static/js/main.06456ca5.js.map",
+    "787.261e848f.chunk.js.map": "/reactsite/static/js/787.261e848f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.89ca244e.css",
+    "static/js/main.06456ca5.js"
+  ]
+}
