@@ -1,9 +1,11 @@
 .home-page {
   height: 100%;
+  width: clamp(30rem, 90%, 192rem);
+  left: calc(50% - clamp(15rem, 45%, 96rem));
 
   .text-zone {
     position: absolute;
-    left: 10%;
+    left: 2.5%;
     top: 50%;
     transform: translateY(-50%);
     width: 40%;
@@ -16,6 +18,7 @@
     margin: 0;
     font-family: 'Coolvetica';
     font-weight: 400;
+    min-width: 26.8rem;
 
     img {
       width: 3.2rem;
@@ -51,4 +54,8 @@
     animation: fadeIn 1s 1.8s backwards;
     white-space: nowrap;
   }
+}
+
+@media screen and (max-width: 768px) {
+ 
 }

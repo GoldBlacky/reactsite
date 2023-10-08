@@ -1,21 +1,24 @@
 .nav-bar {
   background: #181818;
-  width: 10rem;
-  height: 100%;
+  height: 10rem;
+  width: 100%;
   position: absolute;
   top: 0;
   z-index: 3;
-  min-height: 40rem;
+  min-width: 40rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 
   .logo {
-    display: block;
-    padding: 0.8rem 0;
+    width: 5rem;
+    height: 100%;
 
     img {
       display: block;
-      margin: 0.8rem auto;
-      width: 4rem;
-      height: auto;
+      height: 90%;
+      margin-top: 10%;
 
       &.sub-logo {
         width: 5rem;
@@ -24,23 +27,25 @@
   }
 
   nav {
-    display: block;
+    display: flex;
+    flex-direction: row;
     text-align: center;
-    position: absolute;
+    justify-content: space-around;
+    align-items: center;
+    top: 0;
     height: 100%;
-    top: 50%;
-    margin-top: -12rem;
-    width: 100%;
+    width: clamp(30rem, 90%, 192rem);
 
     a {
       font-size: 5rem;
       color: #4d4d4e;
-      display: block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       line-height: 5.1rem;
       height: 5.1rem;
       position: relative;
       text-decoration: none;
-      margin: 4rem 0;
 
       i {
         transition: all 0.3s ease-out;
@@ -64,9 +69,10 @@
         letter-spacing: .2rem;
         position: absolute;
         bottom: 0;
-        display: block;
-        width: 100%;
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 10rem;
         opacity: 0;
         transition: all 0.3s ease-out;
       }
@@ -93,31 +99,6 @@
     a.active {
       svg {
         color: #ffd700;
-      }
-    }
-  }
-
-  ul {
-    position: absolute;
-    bottom: 2rem;
-    width: 100%;
-    display: block;
-    padding: 0;
-    list-style: none;
-    text-align: center;
-    margin: 0;
-
-    li {
-      a {
-        padding: .7rem 0;
-        margin: .3rem 0;
-        display: block;
-        font-size: 4rem;
-        line-height: 1.6rem;
-
-        &:hover svg {
-          color: #3b3b3b;
-        }
       }
     }
   }
