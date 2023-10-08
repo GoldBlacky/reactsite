@@ -1,7 +1,7 @@
 {
   "name": "reactsite",
   "version": "0.1.0",
-  "homepage": "https://GoldBlacky.github.io/reactsite",
+  "homepage": "https://goldblacky.github.io/reactsite",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
